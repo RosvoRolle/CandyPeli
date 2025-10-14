@@ -1,6 +1,6 @@
-[gd_scene load_steps=9 format=3 uid="uid://qr228apf4wam"]
+[gd_scene load_steps=9 format=3 uid="uid://c2r6h20tnb7em"]
 
-[ext_resource type="Script" uid="uid://dp425u0ion2nj" path="res://Scenes/character_body_2d.gd" id="1_jw32o"]
+[ext_resource type="Script" path="res://Scenes/character_body_2d.gd" id="1_jw32o"]
 [ext_resource type="Texture2D" uid="uid://bcbkjjid0bvoy" path="res://Assets/plumprightframe1.png" id="1_v1gob"]
 [ext_resource type="Texture2D" uid="uid://dyoun8ser0l2n" path="res://Assets/plumprightframe2.png" id="2_jw32o"]
 [ext_resource type="Texture2D" uid="uid://8jpnc3l4ktnt" path="res://Assets/plumprightframe3.png" id="3_50glp"]
