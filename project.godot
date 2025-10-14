@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="CandyPeli"
-run/main_scene="uid://1ao718qpdw88"
+run/main_scene="uid://c2r6h20tnb7em"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
 
