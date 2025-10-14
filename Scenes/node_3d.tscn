@@ -1,3 +1,10 @@
-[gd_scene format=3 uid="uid://1ao718qpdw88"]
+[gd_scene load_steps=2 format=3 uid="uid://1ao718qpdw88"]
 
-[node name="Node2D" type="Node2D"]
+[ext_resource type="Texture2D" uid="uid://bx4pqynn3m8ai" path="res://Assets/Halloween background.jpg" id="1_7q7q3"]
+
+[node name="Main" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(962, 538.5)
+scale = Vector2(6.393334, 6.375)
+texture = ExtResource("1_7q7q3")
