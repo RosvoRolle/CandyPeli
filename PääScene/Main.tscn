@@ -46,7 +46,7 @@ animations = [{
 radius = 138.0
 height = 304.0
 
-[node name="Main" type="Node2D"]
+[node name="Main2" type="Node2D"]
 script = ExtResource("1_hqho7")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
