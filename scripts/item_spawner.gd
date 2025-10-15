@@ -18,6 +18,12 @@ func spawn_item():
 	if item_scenes.size() == 0:
 		return
 	
+	#cleaner function loop.
+	for item in get_tree().current_scene.get_children():
+		if item is RigidBody2D or item is Node2D:
+			if item.global_position.y > get_viewport_rect().size.y + 100:
+				item.queue_free()
+	
 	var random_scenes = item_scenes[randi() % item_scenes.size()]
 	var item_instance = random_scenes.instantiate()
 

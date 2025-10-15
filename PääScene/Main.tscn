@@ -71,3 +71,4 @@ script = null
 [node name="item spawner" type="Node2D" parent="."]
 script = ExtResource("9_h43ip")
 item_scenes = Array[PackedScene]([ExtResource("8_6nyl5"), ExtResource("10_36p2n"), ExtResource("11_4ag3r"), ExtResource("12_0mr8s"), ExtResource("13_jdfom"), ExtResource("14_xp0ib")])
+spawn_interval = 1.5
