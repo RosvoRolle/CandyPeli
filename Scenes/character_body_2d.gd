@@ -3,6 +3,9 @@ extends CharacterBody2D
 @onready var _animated_sprite = $AnimatedSprite2D
 
 @export var nopeus: float = 600.0
+# movement range
+var min_position = Vector2(-500, 0)
+var max_position = Vector2 (1000, 1080)
 
 func _process(delta):
 	
@@ -21,4 +24,5 @@ func _process(delta):
 		_animated_sprite.stop()
 		
 		
-	
+	position.x = clamp(position.x, min_position.x, max_position.x)
+	position.y = clamp(position.y, min_position.y, max_position.y)

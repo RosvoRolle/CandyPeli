@@ -1,14 +1,14 @@
 [gd_scene load_steps=15 format=3 uid="uid://c2r6h20tnb7em"]
 
 [ext_resource type="Script" uid="uid://dp425u0ion2nj" path="res://Scenes/character_body_2d.gd" id="1_jw32o"]
-[ext_resource type="Texture2D" uid="uid://bcbkjjid0bvoy" path="res://Assets/plumprightframe1.png" id="1_v1gob"]
-[ext_resource type="Texture2D" uid="uid://dyoun8ser0l2n" path="res://Assets/plumprightframe2.png" id="2_jw32o"]
-[ext_resource type="Texture2D" uid="uid://8jpnc3l4ktnt" path="res://Assets/plumprightframe3.png" id="3_50glp"]
-[ext_resource type="Texture2D" uid="uid://ekpvn6dwcn75" path="res://Assets/plumprightframe4.png" id="4_vy5pj"]
-[ext_resource type="Texture2D" uid="uid://dmibdmy0fohp4" path="res://Assets/plumprightframe5.png" id="5_bmxlf"]
-[ext_resource type="Texture2D" uid="uid://bbqxi5ybx4ex2" path="res://Assets/plumprightframe6.png" id="6_4kpch"]
-[ext_resource type="PackedScene" uid="uid://8venbce857y8" path="res://Scenes/Karkkei.tscn" id="9_grg3l"]
-[ext_resource type="Script" uid="uid://dyg4om01568eb" path="res://Scenes/spawneri.gd" id="9_vy5pj"]
+[ext_resource type="Texture2D" uid="uid://ddrw2l75gip2l" path="res://Assets/plumpyframe1rightSCALED.png" id="2_grg3l"]
+[ext_resource type="Texture2D" uid="uid://cnpneore7wnv1" path="res://Assets/plumpyframe2rightSCALED.png" id="3_frkhe"]
+[ext_resource type="Texture2D" uid="uid://cx622vqs0qhof" path="res://Assets/plumpyframe3rightSCALED.png" id="4_1p5hy"]
+[ext_resource type="Texture2D" uid="uid://cupicab4uu2s1" path="res://Assets/plumpyframe4rightSCALED.png" id="5_h1m7h"]
+[ext_resource type="Texture2D" uid="uid://bg2vhmrq4oxxn" path="res://Assets/plumpyframe5rightSCALED.png" id="6_erwvk"]
+[ext_resource type="Texture2D" uid="uid://dchno3x0nqh26" path="res://Assets/plumpyframe6rightSCALED.png" id="7_2w5on"]
+[ext_resource type="PackedScene" path="res://Scenes/Karkkei.tscn" id="9_grg3l"]
+[ext_resource type="Script" path="res://Scenes/spawneri.gd" id="9_vy5pj"]
 [ext_resource type="Texture2D" uid="uid://c34ll8u7iyorc" path="res://Assets/kurpitsa.PNG" id="10_grg3l"]
 [ext_resource type="Texture2D" uid="uid://0nt2irw6v4mw" path="res://Assets/lepakkokarkki.PNG" id="11_frkhe"]
 [ext_resource type="Texture2D" uid="uid://dp8w8236ha74d" path="res://Assets/silmakarkki.PNG" id="12_1p5hy"]
@@ -17,22 +17,22 @@
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("6_4kpch")
+"texture": ExtResource("2_grg3l")
 }, {
 "duration": 1.0,
-"texture": ExtResource("5_bmxlf")
+"texture": ExtResource("3_frkhe")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_vy5pj")
+"texture": ExtResource("4_1p5hy")
 }, {
 "duration": 1.0,
-"texture": ExtResource("3_50glp")
+"texture": ExtResource("5_h1m7h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("2_jw32o")
+"texture": ExtResource("6_erwvk")
 }, {
 "duration": 1.0,
-"texture": ExtResource("1_v1gob")
+"texture": ExtResource("7_2w5on")
 }],
 "loop": true,
 "name": &"run",
@@ -53,7 +53,6 @@ position = Vector2(670, 796)
 scale = Vector2(0.322091, 0.31165)
 sprite_frames = SubResource("SpriteFrames_grg3l")
 animation = &"run"
-frame = 3
 frame_progress = 0.173194
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]

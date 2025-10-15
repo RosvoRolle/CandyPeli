@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cxr8yed26ijtu"
-path="res://.godot/imported/plumpleftframe2.png-27223d1f3151a435f77726cbf71efd39.ctex"
+uid="uid://b8pkxw0losaq1"
+path="res://.godot/imported/plumpyframe1leftSCALED.png-1d346bc93e7584408c88c9d6dc857578.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/plumpleftframe2.png"
-dest_files=["res://.godot/imported/plumpleftframe2.png-27223d1f3151a435f77726cbf71efd39.ctex"]
+source_file="res://Assets/plumpyframe1leftSCALED.png"
+dest_files=["res://.godot/imported/plumpyframe1leftSCALED.png-1d346bc93e7584408c88c9d6dc857578.ctex"]
 
 [params]
 
