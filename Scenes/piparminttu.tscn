@@ -1,12 +1,14 @@
-[gd_scene load_steps=3 format=3 uid="uid://bxqqaxn1pj2t7"]
+[gd_scene load_steps=4 format=3 uid="uid://bxqqaxn1pj2t7"]
 
 [ext_resource type="Texture2D" uid="uid://bdny6jbokrn8x" path="res://Assets/piparminttu.PNG" id="1_3oolq"]
+[ext_resource type="Script" uid="uid://cmacutlyhqyn5" path="res://Scenes/piparminttu.gd" id="1_fjj5m"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_65741"]
 radius = 29.0
 
 [node name="Piparminttu" type="RigidBody2D"]
 position = Vector2(218, 119)
+script = ExtResource("1_fjj5m")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(61, 63)

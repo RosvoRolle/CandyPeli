@@ -1,6 +1,6 @@
 extends RigidBody2D
 
-@export var damage: int = 0    
+@export var damage: int = 1    
 
 func _ready():
 	contact_monitor = true
