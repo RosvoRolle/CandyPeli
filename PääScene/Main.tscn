@@ -8,7 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://cupicab4uu2s1" path="res://Assets/plumpyframe4rightSCALED.png" id="5_hqho7"]
 [ext_resource type="Texture2D" uid="uid://bg2vhmrq4oxxn" path="res://Assets/plumpyframe5rightSCALED.png" id="6_ehrvi"]
 [ext_resource type="Texture2D" uid="uid://dchno3x0nqh26" path="res://Assets/plumpyframe6rightSCALED.png" id="7_inf0h"]
-[ext_resource type="PackedScene" uid="uid://ctf8wj1utkydr" path="res://candy_corn.tscn" id="8_6nyl5"]
+[ext_resource type="PackedScene" uid="uid://cuo7n10agdbbv" path="res://candy_corn.tscn" id="8_6nyl5"]
 [ext_resource type="Script" uid="uid://ccrpgghj3agk2" path="res://scripts/item_spawner.gd" id="9_h43ip"]
 [ext_resource type="PackedScene" uid="uid://cmw15uso1cd2a" path="res://Scenes/candy_corn.tscn" id="10_jdfom"]
 [ext_resource type="PackedScene" uid="uid://c5aief4f176bi" path="res://Scenes/lepakkokarkki.tscn" id="13_jdfom"]
