@@ -7,7 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://cupicab4uu2s1" path="res://Assets/plumpyframe4rightSCALED.png" id="5_h1m7h"]
 [ext_resource type="Texture2D" uid="uid://bg2vhmrq4oxxn" path="res://Assets/plumpyframe5rightSCALED.png" id="6_erwvk"]
 [ext_resource type="Texture2D" uid="uid://dchno3x0nqh26" path="res://Assets/plumpyframe6rightSCALED.png" id="7_2w5on"]
-[ext_resource type="PackedScene" path="res://Scenes/Karkkei.tscn" id="9_grg3l"]
+[ext_resource type="PackedScene" uid="uid://8venbce857y8" path="res://Scenes/Karkkei.tscn" id="9_grg3l"]
 [ext_resource type="Script" uid="uid://dyg4om01568eb" path="res://Scenes/spawneri.gd" id="9_vy5pj"]
 [ext_resource type="Texture2D" uid="uid://bdny6jbokrn8x" path="res://Assets/piparminttu.PNG" id="10_bmxlf"]
 
@@ -37,7 +37,8 @@ animations = [{
 "speed": 10.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_grg3l"]
+[sub_resource type="CircleShape2D" id="CircleShape2D_bmxlf"]
+radius = 26.076809
 
 [node name="Main" type="Node2D"]
 
@@ -47,14 +48,15 @@ animations = [{
 script = ExtResource("1_jw32o")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
-position = Vector2(643.00006, 942.99994)
-scale = Vector2(0.622, 0.622)
+position = Vector2(642.00006, 943.99994)
+scale = Vector2(0.622, 0.603)
 sprite_frames = SubResource("SpriteFrames_grg3l")
 animation = &"run"
 frame_progress = 0.173194
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
-shape = SubResource("RectangleShape2D_grg3l")
+position = Vector2(724, 989)
+shape = SubResource("CircleShape2D_bmxlf")
 
 [node name="Spawneri" type="Node2D" parent="."]
 script = ExtResource("9_vy5pj")
