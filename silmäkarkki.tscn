@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://bc4vdvlnp3hok"]
+
+[ext_resource type="Texture2D" uid="uid://dp8w8236ha74d" path="res://Assets/silmakarkki.PNG" id="1_50af6"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_4krjd"]
+radius = 44.0
+height = 108.0
+
+[node name="silmäkarkki" type="RigidBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(491, 235)
+scale = Vector2(0.275, 0.275)
+texture = ExtResource("1_50af6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(500, 238)
+shape = SubResource("CapsuleShape2D_4krjd")

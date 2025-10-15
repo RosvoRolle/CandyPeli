@@ -3,15 +3,16 @@
 [ext_resource type="Texture2D" uid="uid://c34ll8u7iyorc" path="res://Assets/kurpitsa.PNG" id="1_tyxby"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qymk7"]
-size = Vector2(199, 152)
+size = Vector2(137.063, 67)
 
 [node name="Kurpitsa" type="RigidBody2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(603, 219)
-scale = Vector2(0.585, 0.585)
+scale = Vector2(0.305, 0.305)
 texture = ExtResource("1_tyxby")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(610.5, 219)
+position = Vector2(606, 217.5)
+scale = Vector2(0.715, 1)
 shape = SubResource("RectangleShape2D_qymk7")

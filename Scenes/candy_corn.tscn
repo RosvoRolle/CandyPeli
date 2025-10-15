@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://cmw15uso1cd2a"]
 
-[ext_resource type="Script" uid="uid://do4y8xm6xkeww" path="res://Scenes/candy_corn.gd" id="1_nh74x"]
-[ext_resource type="Texture2D" uid="uid://dquusf4clsui0" path="res://Assets/candycorn.PNG" id="2_fe3ki"]
+[ext_resource type="Script" uid="uid://do4y8xm6xkeww" path="res://scripts/candy_corn.gd" id="1_4uyae"]
+[ext_resource type="Texture2D" uid="uid://dquusf4clsui0" path="res://Assets/candycorn.PNG" id="2_rnm6f"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_nh74x"]
 radius = 80.0
@@ -9,12 +9,12 @@ height = 224.0
 
 [node name="Candy corn" type="RigidBody2D"]
 collision_layer = 2
-script = ExtResource("1_nh74x")
+script = ExtResource("1_4uyae")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(569, 332)
 scale = Vector2(0.28, 0.28)
-texture = ExtResource("2_fe3ki")
+texture = ExtResource("2_rnm6f")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(563, 325)
