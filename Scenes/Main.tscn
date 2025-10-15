@@ -8,7 +8,10 @@
 [ext_resource type="Texture2D" uid="uid://bg2vhmrq4oxxn" path="res://Assets/plumpyframe5rightSCALED.png" id="6_erwvk"]
 [ext_resource type="Texture2D" uid="uid://dchno3x0nqh26" path="res://Assets/plumpyframe6rightSCALED.png" id="7_2w5on"]
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 [ext_resource type="PackedScene" uid="uid://8venbce857y8" path="res://Scenes/Karkkei.tscn" id="9_grg3l"]
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 [ext_resource type="Script" uid="uid://dyg4om01568eb" path="res://Scenes/spawneri.gd" id="9_vy5pj"]
@@ -56,6 +59,9 @@ height = 348.0
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_1p5hy"]
 radius = 159.66214
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
 [node name="Main" type="Node2D"]
@@ -74,9 +80,12 @@ frame_progress = 0.173194
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 position = Vector2(724, 989)
 shape = SubResource("CircleShape2D_bmxlf")
 =======
+=======
+>>>>>>> Stashed changes
 position = Vector2(725, 977)
 shape = SubResource("RectangleShape2D_grg3l")
 >>>>>>> Stashed changes
