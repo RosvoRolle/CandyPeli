@@ -27,3 +27,21 @@ func _process(delta):
 		
 	position.x = clamp(position.x, min_position.x, max_position.x)
 	position.y = clamp(position.y, min_position.y, max_position.y)
+	
+	
+# HP Systeemit
+@export var max_hp := 3
+var health := max_hp
+signal health_muuttunut(nykyinen, max)
+
+func _ready():
+	add_to_group("pelaaja")
+	health_muuttunut.emit(health, max_hp)
+	
+func take_damage(amount :=1):
+	health = max(health - amount, 0)
+	health_muuttunut.emit(health, max_hp)
+	if health == 0:
+		print ("Game over!")
+	
+	
