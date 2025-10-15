@@ -50,3 +50,9 @@ frame = 3
 frame_progress = 0.173194
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+
+[node name="Karkkei" type="Area2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Karkkei"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Karkkei"]
