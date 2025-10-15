@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://c2r6h20tnb7em"]
+[gd_scene load_steps=17 format=3 uid="uid://c2r6h20tnb7em"]
 
 [ext_resource type="Script" uid="uid://dp425u0ion2nj" path="res://Scenes/character_body_2d.gd" id="1_jw32o"]
 [ext_resource type="Texture2D" uid="uid://ddrw2l75gip2l" path="res://Assets/plumpyframe1rightSCALED.png" id="2_grg3l"]
@@ -7,9 +7,15 @@
 [ext_resource type="Texture2D" uid="uid://cupicab4uu2s1" path="res://Assets/plumpyframe4rightSCALED.png" id="5_h1m7h"]
 [ext_resource type="Texture2D" uid="uid://bg2vhmrq4oxxn" path="res://Assets/plumpyframe5rightSCALED.png" id="6_erwvk"]
 [ext_resource type="Texture2D" uid="uid://dchno3x0nqh26" path="res://Assets/plumpyframe6rightSCALED.png" id="7_2w5on"]
+<<<<<<< Updated upstream
 [ext_resource type="PackedScene" uid="uid://8venbce857y8" path="res://Scenes/Karkkei.tscn" id="9_grg3l"]
+=======
+>>>>>>> Stashed changes
 [ext_resource type="Script" uid="uid://dyg4om01568eb" path="res://Scenes/spawneri.gd" id="9_vy5pj"]
-[ext_resource type="Texture2D" uid="uid://bdny6jbokrn8x" path="res://Assets/piparminttu.PNG" id="10_bmxlf"]
+[ext_resource type="Script" uid="uid://do4y8xm6xkeww" path="res://Scenes/candy_corn.gd" id="10_grg3l"]
+[ext_resource type="Script" uid="uid://cw3xrnpfb6koo" path="res://Scenes/spawned_items.gd" id="11_frkhe"]
+[ext_resource type="Texture2D" uid="uid://dquusf4clsui0" path="res://Assets/candycorn.PNG" id="12_1p5hy"]
+[ext_resource type="Texture2D" uid="uid://bhrjiy3w2adf1" path="res://Assets/haamukeksi.PNG" id="13_h1m7h"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_grg3l"]
 animations = [{
@@ -37,8 +43,20 @@ animations = [{
 "speed": 10.0
 }]
 
+<<<<<<< Updated upstream
 [sub_resource type="CircleShape2D" id="CircleShape2D_bmxlf"]
 radius = 26.076809
+=======
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_grg3l"]
+size = Vector2(60, 77)
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_frkhe"]
+radius = 174.0
+height = 348.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_1p5hy"]
+radius = 159.66214
+>>>>>>> Stashed changes
 
 [node name="Main" type="Node2D"]
 
@@ -55,14 +73,44 @@ animation = &"run"
 frame_progress = 0.173194
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+<<<<<<< Updated upstream
 position = Vector2(724, 989)
 shape = SubResource("CircleShape2D_bmxlf")
+=======
+position = Vector2(725, 977)
+shape = SubResource("RectangleShape2D_grg3l")
+>>>>>>> Stashed changes
 
 [node name="Spawneri" type="Node2D" parent="."]
 script = ExtResource("9_vy5pj")
-karkki_scene = ExtResource("9_grg3l")
-karkki_textures = Array[Texture2D]([ExtResource("10_bmxlf"), null, null, null])
 
 [node name="Timer" type="Timer" parent="Spawneri"]
 wait_time = 0.8
 autostart = true
+
+[node name="Spawned items" type="Area2D" parent="."]
+script = ExtResource("11_frkhe")
+
+[node name="Candy Corn" type="CharacterBody2D" parent="Spawned items"]
+position = Vector2(920, -662)
+script = ExtResource("10_grg3l")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Spawned items/Candy Corn"]
+shape = SubResource("CapsuleShape2D_frkhe")
+
+[node name="Sprite2D" type="Sprite2D" parent="Spawned items/Candy Corn"]
+texture = ExtResource("12_1p5hy")
+
+[node name="haamukeksi" type="Sprite2D" parent="Spawned items"]
+position = Vector2(1466, -1179)
+texture = ExtResource("13_h1m7h")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Spawned items/haamukeksi"]
+shape = SubResource("CircleShape2D_1p5hy")
+
+[node name="Sprite2D" type="Sprite2D" parent="Spawned items/haamukeksi"]
+texture = ExtResource("13_h1m7h")
+
+[node name="Kurpitsa" type="Sprite2D" parent="Spawned items"]
+
+[node name="Lepakkokarkki" type="Sprite2D" parent="Spawned items"]
