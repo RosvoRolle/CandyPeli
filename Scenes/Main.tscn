@@ -48,7 +48,7 @@ script = ExtResource("1_jw32o")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
 position = Vector2(670, 796)
-scale = Vector2(0.322091, 0.31165)
+scale = Vector2(0.622, 0.603)
 sprite_frames = SubResource("SpriteFrames_grg3l")
 animation = &"run"
 frame_progress = 0.173194
