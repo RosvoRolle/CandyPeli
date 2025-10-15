@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://c2r6h20tnb7em"]
+[gd_scene load_steps=14 format=3 uid="uid://c2r6h20tnb7em"]
 
 [ext_resource type="Script" uid="uid://dp425u0ion2nj" path="res://Scenes/character_body_2d.gd" id="1_jw32o"]
 [ext_resource type="Texture2D" uid="uid://ddrw2l75gip2l" path="res://Assets/plumpyframe1rightSCALED.png" id="2_grg3l"]
@@ -9,6 +9,8 @@
 [ext_resource type="Texture2D" uid="uid://dchno3x0nqh26" path="res://Assets/plumpyframe6rightSCALED.png" id="7_2w5on"]
 [ext_resource type="PackedScene" uid="uid://cmw15uso1cd2a" path="res://candy_corn.tscn" id="8_vy5pj"]
 [ext_resource type="Script" uid="uid://ccrpgghj3agk2" path="res://Scenes/item_spawner.gd" id="9_bmxlf"]
+[ext_resource type="PackedScene" uid="uid://bxqqaxn1pj2t7" path="res://piparminttu.tscn" id="10_bmxlf"]
+[ext_resource type="PackedScene" uid="uid://doun2qsh5h66a" path="res://kurpitsa.tscn" id="11_4kpch"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_grg3l"]
 animations = [{
@@ -36,31 +38,33 @@ animations = [{
 "speed": 10.0
 }]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_bmxlf"]
-radius = 234.94
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_bmxlf"]
+radius = 138.0
+height = 304.0
 
 [node name="Main" type="Node2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 
 [node name="Player" type="CharacterBody2D" parent="."]
-collision_mask = 2
 script = ExtResource("1_jw32o")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Player"]
-position = Vector2(642, 944)
+position = Vector2(314, 950)
 scale = Vector2(0.622, 0.603)
 sprite_frames = SubResource("SpriteFrames_grg3l")
 animation = &"run"
 frame_progress = 0.173194
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
-position = Vector2(623, 963)
-scale = Vector2(0.622, 0.603)
-shape = SubResource("CircleShape2D_bmxlf")
+position = Vector2(290, 956)
+shape = SubResource("CapsuleShape2D_bmxlf")
+
+[node name="Candy corn" parent="." instance=ExtResource("8_vy5pj")]
+script = null
 
 [node name="Timer" type="Timer" parent="."]
 
 [node name="item spawner" type="Node2D" parent="."]
 script = ExtResource("9_bmxlf")
-item_scene = ExtResource("8_vy5pj")
+item_scenes = Array[PackedScene]([ExtResource("8_vy5pj"), ExtResource("10_bmxlf"), ExtResource("11_4kpch")])

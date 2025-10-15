@@ -5,8 +5,8 @@ extends CharacterBody2D
 
 @export var nopeus: float = 600.0
 # movement range
-var min_position = Vector2(-655, 0)
-var max_position = Vector2 (1200, 1080)
+var min_position = Vector2(-155, 0)
+var max_position = Vector2 (1400, 1080)
 
 func _process(delta):
 	

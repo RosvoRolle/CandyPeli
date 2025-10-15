@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://bxqqaxn1pj2t7"]
+
+[ext_resource type="Texture2D" uid="uid://bdny6jbokrn8x" path="res://Assets/piparminttu.PNG" id="1_3oolq"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_65741"]
+radius = 29.0
+
+[node name="Piparminttu" type="RigidBody2D"]
+position = Vector2(218, 119)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(61, 63)
+scale = Vector2(0.205, 0.205)
+texture = ExtResource("1_3oolq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(60, 62)
+shape = SubResource("CircleShape2D_65741")

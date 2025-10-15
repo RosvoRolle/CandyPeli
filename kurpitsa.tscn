@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://doun2qsh5h66a"]
+
+[ext_resource type="Texture2D" uid="uid://c34ll8u7iyorc" path="res://Assets/kurpitsa.PNG" id="1_tyxby"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qymk7"]
+size = Vector2(199, 152)
+
+[node name="Kurpitsa" type="RigidBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(603, 219)
+scale = Vector2(0.585, 0.585)
+texture = ExtResource("1_tyxby")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(610.5, 219)
+shape = SubResource("RectangleShape2D_qymk7")
