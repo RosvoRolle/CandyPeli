@@ -1,8 +1,8 @@
 
 extends Node2D
 
-@export var karkki_scene: PackedScene      
-@export var karkki_textures: Array[Texture2D]  
+@export var karkki_scene: PackedScene
+@export var karkki_textures: Array[Texture2D]
 
 
 
