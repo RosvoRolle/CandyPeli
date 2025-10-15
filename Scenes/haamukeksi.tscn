@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://batgdne0r4072"]
+
+[ext_resource type="Texture2D" uid="uid://bhrjiy3w2adf1" path="res://Assets/haamukeksi.PNG" id="1_rvcs4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rtkev"]
+size = Vector2(99, 81)
+
+[node name="haamukeksi" type="RigidBody2D"]
+position = Vector2(0, 3)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(463, 251)
+scale = Vector2(0.255, 0.255)
+texture = ExtResource("1_rvcs4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(461.5, 249.5)
+shape = SubResource("RectangleShape2D_rtkev")

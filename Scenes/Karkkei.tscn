@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://8venbce857y8"]
 
-[ext_resource type="Script" uid="uid://di7aqooa404m4" path="res://Scenes/karkkei.gd" id="1_4vgcx"]
+[ext_resource type="Script" uid="uid://cksh66il0u8o0" path="res://scripts/karkkei.gd" id="1_4vgcx"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_maqd6"]
 

@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://c5aief4f176bi"]
+
+[ext_resource type="Texture2D" uid="uid://0nt2irw6v4mw" path="res://Assets/lepakkokarkki.PNG" id="1_ds72v"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7f25q"]
+size = Vector2(104, 67)
+
+[node name="lepakkokarkki" type="RigidBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(549, 196)
+scale = Vector2(0.265, 0.265)
+texture = ExtResource("1_ds72v")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(549, 193.5)
+shape = SubResource("RectangleShape2D_7f25q")
