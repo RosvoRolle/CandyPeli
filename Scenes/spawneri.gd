@@ -4,7 +4,7 @@ extends Node2D
 @export var karkki_scene: PackedScene      
 @export var karkki_textures: Array[Texture2D]  
 
-@export var top_margin := 40.0
+
 
 @export var spawni_ajat: float = 2.0
 @onready var container := get_parent() 
@@ -12,7 +12,6 @@ extends Node2D
 var rng := RandomNumberGenerator.new()
 
 func _ready():
-	rng.randomize()  
 	timer.wait_time = spawni_ajat
 	timer.timeout.connect(_on_timer_timeout)
 	timer.start()
@@ -22,13 +21,6 @@ func _on_timer_timeout():
 	spawn_karkki()
 	
 	
-
-
-
-
-
-
-
 func spawn_karkki():
 	if not karkki_scene or karkki_textures.is_empty():
 		return
