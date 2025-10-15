@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://c2r6h20tnb7em"]
+[gd_scene load_steps=12 format=3 uid="uid://c2r6h20tnb7em"]
 
 [ext_resource type="Script" uid="uid://dp425u0ion2nj" path="res://Scenes/character_body_2d.gd" id="1_jw32o"]
 [ext_resource type="Texture2D" uid="uid://ddrw2l75gip2l" path="res://Assets/plumpyframe1rightSCALED.png" id="2_grg3l"]
@@ -7,9 +7,8 @@
 [ext_resource type="Texture2D" uid="uid://cupicab4uu2s1" path="res://Assets/plumpyframe4rightSCALED.png" id="5_h1m7h"]
 [ext_resource type="Texture2D" uid="uid://bg2vhmrq4oxxn" path="res://Assets/plumpyframe5rightSCALED.png" id="6_erwvk"]
 [ext_resource type="Texture2D" uid="uid://dchno3x0nqh26" path="res://Assets/plumpyframe6rightSCALED.png" id="7_2w5on"]
-[ext_resource type="PackedScene" uid="uid://8venbce857y8" path="res://Scenes/Karkkei.tscn" id="9_grg3l"]
-[ext_resource type="Script" uid="uid://dyg4om01568eb" path="res://Scenes/spawneri.gd" id="9_vy5pj"]
-[ext_resource type="Texture2D" uid="uid://bdny6jbokrn8x" path="res://Assets/piparminttu.PNG" id="10_bmxlf"]
+[ext_resource type="PackedScene" uid="uid://cmw15uso1cd2a" path="res://candy_corn.tscn" id="8_vy5pj"]
+[ext_resource type="Script" uid="uid://ccrpgghj3agk2" path="res://Scenes/item_spawner.gd" id="9_bmxlf"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_grg3l"]
 animations = [{
@@ -38,31 +37,30 @@ animations = [{
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_bmxlf"]
-radius = 26.076809
+radius = 234.94
 
 [node name="Main" type="Node2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 
-[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+[node name="Player" type="CharacterBody2D" parent="."]
+collision_mask = 2
 script = ExtResource("1_jw32o")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
-position = Vector2(642.00006, 943.99994)
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Player"]
+position = Vector2(642, 944)
 scale = Vector2(0.622, 0.603)
 sprite_frames = SubResource("SpriteFrames_grg3l")
 animation = &"run"
 frame_progress = 0.173194
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
-position = Vector2(724, 989)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
+position = Vector2(623, 963)
+scale = Vector2(0.622, 0.603)
 shape = SubResource("CircleShape2D_bmxlf")
 
-[node name="Spawneri" type="Node2D" parent="."]
-script = ExtResource("9_vy5pj")
-karkki_scene = ExtResource("9_grg3l")
-karkki_textures = Array[Texture2D]([ExtResource("10_bmxlf"), null, null, null])
+[node name="Timer" type="Timer" parent="."]
 
-[node name="Timer" type="Timer" parent="Spawneri"]
-wait_time = 0.8
-autostart = true
+[node name="item spawner" type="Node2D" parent="."]
+script = ExtResource("9_bmxlf")
+item_scene = ExtResource("8_vy5pj")

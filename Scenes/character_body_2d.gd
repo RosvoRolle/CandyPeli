@@ -1,6 +1,7 @@
 extends CharacterBody2D
 
 @onready var _animated_sprite = $AnimatedSprite2D
+@export var gravity: float = 980.0  # pixels per second squared (same as default 2D gravity)
 
 @export var nopeus: float = 600.0
 # movement range
