@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c34ll8u7iyorc"
-path="res://.godot/imported/kurpitsa.PNG-76b7afadd3cdbc6cf6f163c16082c86e.ctex"
+uid="uid://bd2pnhvoinp77"
+path="res://.godot/imported/sydandead.png-7650891b8840d3023b26c5fdd28bacb7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/kurpitsa.PNG"
-dest_files=["res://.godot/imported/kurpitsa.PNG-76b7afadd3cdbc6cf6f163c16082c86e.ctex"]
+source_file="res://Assets/sydandead.png"
+dest_files=["res://.godot/imported/sydandead.png-7650891b8840d3023b26c5fdd28bacb7.ctex"]
 
 [params]
 

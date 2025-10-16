@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c34ll8u7iyorc"
-path="res://.godot/imported/kurpitsa.PNG-76b7afadd3cdbc6cf6f163c16082c86e.ctex"
+uid="uid://de52h8bqfbist"
+path="res://.godot/imported/tausta.png-80febb66321a76a5b3b779166e211135.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/kurpitsa.PNG"
-dest_files=["res://.godot/imported/kurpitsa.PNG-76b7afadd3cdbc6cf6f163c16082c86e.ctex"]
+source_file="res://Assets/tausta.png"
+dest_files=["res://.godot/imported/tausta.png-80febb66321a76a5b3b779166e211135.ctex"]
 
 [params]
 

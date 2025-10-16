@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c34ll8u7iyorc"
-path="res://.godot/imported/kurpitsa.PNG-76b7afadd3cdbc6cf6f163c16082c86e.ctex"
+uid="uid://dsipocyph0rth"
+path="res://.godot/imported/PUMPLOGO.png-bd026e1ae45710b3626d23d578cf9d23.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/kurpitsa.PNG"
-dest_files=["res://.godot/imported/kurpitsa.PNG-76b7afadd3cdbc6cf6f163c16082c86e.ctex"]
+source_file="res://Assets/PUMPLOGO.png"
+dest_files=["res://.godot/imported/PUMPLOGO.png-bd026e1ae45710b3626d23d578cf9d23.ctex"]
 
 [params]
 
