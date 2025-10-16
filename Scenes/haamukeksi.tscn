@@ -7,6 +7,7 @@ size = Vector2(99, 81)
 
 [node name="haamukeksi" type="RigidBody2D"]
 position = Vector2(0, 3)
+scale = Vector2(1.415, 1.415)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(463, 251)

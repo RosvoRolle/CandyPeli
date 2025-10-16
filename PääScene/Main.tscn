@@ -57,6 +57,7 @@ texture = ExtResource("2_hqho7")
 
 [node name="Player" type="CharacterBody2D" parent="." groups=["Pelaaja"]]
 script = ExtResource("1_82sn2")
+nopeus = 1000.0
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Player"]
 position = Vector2(314, 950)

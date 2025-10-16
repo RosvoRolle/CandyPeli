@@ -4,8 +4,8 @@
 [ext_resource type="Texture2D" uid="uid://dquusf4clsui0" path="res://Assets/candycorn.PNG" id="2_rnm6f"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_nh74x"]
-radius = 80.0
-height = 224.0
+radius = 178.0
+height = 464.0
 
 [node name="Candy corn" type="RigidBody2D"]
 collision_layer = 2
@@ -13,7 +13,7 @@ script = ExtResource("1_4uyae")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(569, 332)
-scale = Vector2(0.28, 0.28)
+scale = Vector2(0.455, 0.455)
 texture = ExtResource("2_rnm6f")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
