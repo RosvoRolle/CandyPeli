@@ -4,7 +4,7 @@ extends RigidBody2D
 
 func _ready():
 	contact_monitor = true
-	max_contacts_reported = 2
+	max_contacts_reported = 3
 	body_entered.connect(_on_body_entered)
 
 func _on_body_entered(body: Node) -> void:

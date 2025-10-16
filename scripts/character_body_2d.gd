@@ -43,5 +43,7 @@ func take_damage(amount :=1):
 	health_muuttunut.emit(health, max_hp)
 	if health == 0:
 		print ("Game over!")
-	
-	
+		GameOver()
+		
+func GameOver():
+		get_tree().change_scene_to_file("res://PääScene/game_over_screen.tscn")
