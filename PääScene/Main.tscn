@@ -1,7 +1,8 @@
-[gd_scene load_steps=18 format=3 uid="uid://c2r6h20tnb7em"]
+[gd_scene load_steps=20 format=3 uid="uid://c2r6h20tnb7em"]
 
 [ext_resource type="Script" uid="uid://dp425u0ion2nj" path="res://scripts/character_body_2d.gd" id="1_82sn2"]
 [ext_resource type="Script" uid="uid://btn0ty3qdr3k8" path="res://PääScene/main.gd" id="1_hqho7"]
+[ext_resource type="Texture2D" uid="uid://de52h8bqfbist" path="res://Assets/tausta.png" id="2_hqho7"]
 [ext_resource type="Texture2D" uid="uid://ddrw2l75gip2l" path="res://Assets/plumpyframe1rightSCALED.png" id="2_jdfom"]
 [ext_resource type="Texture2D" uid="uid://cnpneore7wnv1" path="res://Assets/plumpyframe2rightSCALED.png" id="3_xp0ib"]
 [ext_resource type="Texture2D" uid="uid://cx622vqs0qhof" path="res://Assets/plumpyframe3rightSCALED.png" id="4_2nqrj"]
@@ -14,7 +15,8 @@
 [ext_resource type="PackedScene" uid="uid://c5aief4f176bi" path="res://Scenes/lepakkokarkki.tscn" id="13_jdfom"]
 [ext_resource type="Script" uid="uid://cidbnbild1tih" path="res://PääScene/hp_baarit.gd" id="14_2nqrj"]
 [ext_resource type="PackedScene" uid="uid://bc4vdvlnp3hok" path="res://silmäkarkki.tscn" id="14_xp0ib"]
-[ext_resource type="Texture2D" uid="uid://c34ll8u7iyorc" path="res://Assets/kurpitsa.PNG" id="15_2nqrj"]
+[ext_resource type="PackedScene" uid="uid://b51rqcsq10gpv" path="res://bug.tscn" id="15_ehrvi"]
+[ext_resource type="Texture2D" uid="uid://dagyw3w681ml3" path="res://Assets/sydan.png" id="16_ehrvi"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_grg3l"]
 animations = [{
@@ -50,8 +52,10 @@ height = 304.0
 script = ExtResource("1_hqho7")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(960, 543)
+texture = ExtResource("2_hqho7")
 
-[node name="Player" type="CharacterBody2D" parent="."]
+[node name="Player" type="CharacterBody2D" parent="." groups=["Pelaaja"]]
 script = ExtResource("1_82sn2")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Player"]
@@ -71,7 +75,8 @@ shape = SubResource("CapsuleShape2D_bmxlf")
 
 [node name="item spawner" type="Node2D" parent="."]
 script = ExtResource("9_h43ip")
-item_scenes = Array[PackedScene]([ExtResource("10_jdfom"), ExtResource("13_jdfom"), ExtResource("14_xp0ib")])
+item_scenes = Array[PackedScene]([ExtResource("10_jdfom"), ExtResource("13_jdfom"), ExtResource("14_xp0ib"), ExtResource("15_ehrvi")])
+spawn_interval = 1.285
 
 [node name="HPBaarit" type="Control" parent="."]
 layout_mode = 3
@@ -83,21 +88,22 @@ metadata/_edit_use_anchors_ = true
 
 [node name="HBoxContainer" type="HBoxContainer" parent="HPBaarit"]
 layout_mode = 0
-offset_left = 1200.0
-offset_right = 2432.0
-offset_bottom = 346.0
+offset_left = 1415.0
+offset_top = 91.5
+offset_right = 1987.0
+offset_bottom = 258.5
 scale = Vector2(0.5, 0.5)
 
 [node name="Kurpitsa1" type="TextureRect" parent="HPBaarit/HBoxContainer"]
 layout_mode = 2
-texture = ExtResource("15_2nqrj")
+texture = ExtResource("16_ehrvi")
 
 [node name="Kurpitsa2" type="TextureRect" parent="HPBaarit/HBoxContainer"]
-custom_minimum_size = Vector2(64, 64)
 layout_mode = 2
-texture = ExtResource("15_2nqrj")
+texture = ExtResource("16_ehrvi")
+stretch_mode = 2
 
 [node name="Kurpitsa3" type="TextureRect" parent="HPBaarit/HBoxContainer"]
 custom_minimum_size = Vector2(64, 64)
 layout_mode = 2
-texture = ExtResource("15_2nqrj")
+texture = ExtResource("16_ehrvi")
