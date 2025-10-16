@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://b51rqcsq10gpv"]
+
+[ext_resource type="Texture2D" uid="uid://yofifkb6mh0v" path="res://Assets/squashbugvihollinen.png" id="1_g6v7b"]
+[ext_resource type="Script" uid="uid://c2k1t4cg6iehj" path="res://candy_corn.gd" id="1_hs7dx"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hs7dx"]
+size = Vector2(71.76474, 91.7647)
+
+[node name="Bug" type="RigidBody2D"]
+script = ExtResource("1_hs7dx")
+damage = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(739, 398)
+scale = Vector2(0.125, 0.125)
+texture = ExtResource("1_g6v7b")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(738.5, 402)
+scale = Vector2(0.85, 0.85)
+shape = SubResource("RectangleShape2D_hs7dx")

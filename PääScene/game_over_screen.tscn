@@ -1,0 +1,34 @@
+[gd_scene load_steps=4 format=3 uid="uid://dwuaot01sewft"]
+
+[ext_resource type="Texture2D" uid="uid://b1hgi2oqrrbrg" path="res://Assets/Gameoverscreen.png" id="1_gt22q"]
+[ext_resource type="Script" uid="uid://3ok5w7shskfr" path="res://game_over_screen.gd" id="1_w3hxg"]
+[ext_resource type="AudioStream" uid="uid://c74hrc7wv6035" path="res://Music/Game Over Screen_FIN.wav" id="3_l4tlu"]
+
+[node name="Game over" type="VBoxContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_w3hxg")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(954, 545)
+texture = ExtResource("1_gt22q")
+
+[node name="ReplayButton" type="Button" parent="."]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+text = "Replay
+"
+
+[node name="QuitButton" type="Button" parent="."]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+text = "Quit
+"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_l4tlu")
