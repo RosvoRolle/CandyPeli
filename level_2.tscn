@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://bhy88sgscldp6"]
+[gd_scene load_steps=21 format=3 uid="uid://bhy88sgscldp6"]
 
 [ext_resource type="Texture2D" uid="uid://b87keuf8e6mjw" path="res://Assets/taustalevel3.png" id="2_jcnlr"]
 [ext_resource type="Script" uid="uid://dp425u0ion2nj" path="res://scripts/character_body_2d.gd" id="3_5kfcu"]
@@ -17,6 +17,7 @@
 [ext_resource type="Script" uid="uid://cidbnbild1tih" path="res://PääScene/hp_baarit.gd" id="16_t8cg7"]
 [ext_resource type="Texture2D" uid="uid://dagyw3w681ml3" path="res://Assets/sydan.png" id="17_o5ykh"]
 [ext_resource type="Script" uid="uid://t4qq4g7nkcdi" path="res://PääScene/main.gd2.gd" id="18_5kfcu"]
+[ext_resource type="FontFile" uid="uid://be8ovprlkubsq" path="res://Assets/FredokaOne-Regular.otf" id="18_jcnlr"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_grg3l"]
 animations = [{
@@ -112,5 +113,7 @@ texture = ExtResource("17_o5ykh")
 
 [node name="ScoreLabeli" type="Label" parent="HPBaarit"]
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 23.0
+offset_right = 680.0
+offset_bottom = 102.0
+theme_override_fonts/font = ExtResource("18_jcnlr")
+theme_override_font_sizes/font_size = 50
