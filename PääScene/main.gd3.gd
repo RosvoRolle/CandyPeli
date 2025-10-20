@@ -4,7 +4,7 @@
 extends Node
 @onready var player := $Player
 @onready var hud: Control =  $HPBaarit
-@export var score_board := 2
+@export var score_board := 5
 var score := 0
 
 func _ready():
@@ -16,9 +16,8 @@ func _ready():
 func add_score(amount: int = 1) -> void:
 	score += amount
 	hud.set_score(score)
-	$HPBaarit/ScoreLabeli.set_score(score)
 	if score >= score_board:
 		_on_voitto()
 		
 func _on_voitto():
-	get_tree().change_scene_to_file("res://level_3.tscn")
+	get_tree().change_scene_to_file("res://PääScene/Main.tscn")

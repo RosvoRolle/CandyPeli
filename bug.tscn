@@ -9,6 +9,7 @@ size = Vector2(300, 331.1111)
 [node name="Bug" type="RigidBody2D"]
 script = ExtResource("1_hs7dx")
 damage = 1
+pointit = 0
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(739, 398)

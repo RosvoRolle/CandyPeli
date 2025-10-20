@@ -15,7 +15,7 @@ func _on_body_entered(body: Node) -> void:
 		if pointit > 0: 
 			var game = get_tree().get_first_node_in_group("game")
 			if game:
-				game.add.score(pointit)
+				game.add_score(pointit)
 
 				
 		
