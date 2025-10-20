@@ -1,5 +1,4 @@
 extends RigidBody2D
-
 @export var damage: int = 0   # 0 = ei vahinkoa HP baariin, 1 = tekee vahinkoa
 @export var pointit: int = 1 
 @export var missattu_karkki: int = 1

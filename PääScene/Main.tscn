@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://c2r6h20tnb7em"]
+[gd_scene load_steps=20 format=3 uid="uid://c2r6h20tnb7em"]
 
 [ext_resource type="Script" uid="uid://dp425u0ion2nj" path="res://scripts/character_body_2d.gd" id="1_82sn2"]
 [ext_resource type="Script" uid="uid://btn0ty3qdr3k8" path="res://PääScene/main.gd" id="1_hqho7"]
@@ -16,6 +16,7 @@
 [ext_resource type="PackedScene" uid="uid://bc4vdvlnp3hok" path="res://silmäkarkki.tscn" id="14_xp0ib"]
 [ext_resource type="PackedScene" uid="uid://b51rqcsq10gpv" path="res://bug.tscn" id="15_ehrvi"]
 [ext_resource type="Texture2D" uid="uid://dagyw3w681ml3" path="res://Assets/sydan.png" id="16_ehrvi"]
+[ext_resource type="FontFile" uid="uid://be8ovprlkubsq" path="res://Assets/FredokaOne-Regular.otf" id="17_ehrvi"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_grg3l"]
 animations = [{
@@ -108,5 +109,9 @@ texture = ExtResource("16_ehrvi")
 
 [node name="ScoreLabeli" type="Label" parent="HPBaarit"]
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 23.0
+offset_right = 1115.942
+offset_bottom = 159.42029
+scale = Vector2(0.69, 0.69)
+theme_override_colors/font_color = Color(1, 0.84313726, 0, 1)
+theme_override_fonts/font = ExtResource("17_ehrvi")
+theme_override_font_sizes/font_size = 50
