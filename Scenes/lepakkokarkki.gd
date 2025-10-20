@@ -29,7 +29,9 @@ func _on_body_entered(body: Node) -> void:
 			var game = get_tree().get_first_node_in_group("game")
 			if game:
 				game.add_score(pointit)
-
+		var audio_player = body.get_node("AudioStreamPlayer2D")
+		if audio_player:
+			audio_player.play()
 				
 		
 		
@@ -44,4 +46,7 @@ func _karkki_katosi() -> void:
 		var player := get_tree().get_first_node_in_group("pelaaja")
 		if player and player.has_method("take_damage"):
 			player.take_damage(missattu_karkki)
+		var audio_player = player.get_node("AudioStreamPlayer")
+		if audio_player:
+			audio_player.play()
 	queue_free()		

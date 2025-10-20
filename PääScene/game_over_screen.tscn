@@ -4,7 +4,7 @@
 [ext_resource type="Script" uid="uid://3ok5w7shskfr" path="res://game_over_screen.gd" id="1_w3hxg"]
 [ext_resource type="AudioStream" uid="uid://c74hrc7wv6035" path="res://Music/Game Over Screen_FIN.wav" id="3_l4tlu"]
 
-[node name="Game over" type="VBoxContainer"]
+[node name="BoxContainer" type="VBoxContainer"]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0

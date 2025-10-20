@@ -1,10 +1,9 @@
 
-
-
 extends Node
 @onready var player := $Player
 @onready var hud: Control =  $HPBaarit
 @export var score_board := 2
+@export var current_level := 1
 
 var score := 0
 
@@ -24,9 +23,9 @@ func add_score(amount: int = 1) -> void:
 	hud.set_score(score)
 
 	if score >= score_board:
-
 		_on_voitto()
 		
 func _on_voitto():
-	get_tree().change_scene_to_file("res://level_2.tscn")
+	CheckpointManager.enter_level(1)
+	get_tree().change_scene_to_file("res://level/level_2.tscn")
 	

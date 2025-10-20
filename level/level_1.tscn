@@ -1,0 +1,129 @@
+[gd_scene load_steps=24 format=3 uid="uid://cesnampl1kmv4"]
+
+[ext_resource type="Script" uid="uid://btn0ty3qdr3k8" path="res://PääScene/main.gd" id="1_vseoc"]
+[ext_resource type="Texture2D" uid="uid://de52h8bqfbist" path="res://Assets/tausta.png" id="2_svqf6"]
+[ext_resource type="Script" uid="uid://dp425u0ion2nj" path="res://scripts/character_body_2d.gd" id="3_lag3f"]
+[ext_resource type="Texture2D" uid="uid://ddrw2l75gip2l" path="res://Assets/plumpyframe1rightSCALED.png" id="4_sb0gx"]
+[ext_resource type="Texture2D" uid="uid://cnpneore7wnv1" path="res://Assets/plumpyframe2rightSCALED.png" id="5_gj5ex"]
+[ext_resource type="Texture2D" uid="uid://cx622vqs0qhof" path="res://Assets/plumpyframe3rightSCALED.png" id="6_ypb11"]
+[ext_resource type="Texture2D" uid="uid://cupicab4uu2s1" path="res://Assets/plumpyframe4rightSCALED.png" id="7_1rq3w"]
+[ext_resource type="Texture2D" uid="uid://bg2vhmrq4oxxn" path="res://Assets/plumpyframe5rightSCALED.png" id="8_172kb"]
+[ext_resource type="Texture2D" uid="uid://dchno3x0nqh26" path="res://Assets/plumpyframe6rightSCALED.png" id="9_56pii"]
+[ext_resource type="AudioStream" uid="uid://dfltchf8qykj8" path="res://Music/Points_FIN.wav" id="10_oj177"]
+[ext_resource type="AudioStream" uid="uid://couoobviwccth" path="res://Music/Evil laugh_FIN.wav" id="11_hu7m1"]
+[ext_resource type="Script" uid="uid://ccrpgghj3agk2" path="res://scripts/item_spawner.gd" id="12_5u3sd"]
+[ext_resource type="PackedScene" uid="uid://cmw15uso1cd2a" path="res://Scenes/candy_corn.tscn" id="13_i6aci"]
+[ext_resource type="PackedScene" uid="uid://c5aief4f176bi" path="res://Scenes/lepakkokarkki.tscn" id="14_l0khy"]
+[ext_resource type="PackedScene" uid="uid://bc4vdvlnp3hok" path="res://silmäkarkki.tscn" id="15_1sh3p"]
+[ext_resource type="PackedScene" uid="uid://b51rqcsq10gpv" path="res://bug.tscn" id="16_ppk33"]
+[ext_resource type="PackedScene" uid="uid://benf084aa14h1" path="res://Scenes/kurpitsa.tscn" id="17_umon3"]
+[ext_resource type="PackedScene" uid="uid://bxqqaxn1pj2t7" path="res://Scenes/piparminttu.tscn" id="18_rpfn0"]
+[ext_resource type="Script" uid="uid://cidbnbild1tih" path="res://PääScene/hp_baarit.gd" id="19_wapoo"]
+[ext_resource type="Texture2D" uid="uid://dagyw3w681ml3" path="res://Assets/sydan.png" id="20_pqa57"]
+[ext_resource type="FontFile" uid="uid://be8ovprlkubsq" path="res://Assets/FredokaOne-Regular.otf" id="21_fojr4"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_grg3l"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_sb0gx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_gj5ex")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_ypb11")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_1rq3w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_172kb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_56pii")
+}],
+"loop": true,
+"name": &"run",
+"speed": 10.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_bmxlf"]
+radius = 138.0
+height = 304.0
+
+[node name="Main2" type="Node2D"]
+script = ExtResource("1_vseoc")
+score_board = 5
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(960, 543)
+texture = ExtResource("2_svqf6")
+
+[node name="Player" type="CharacterBody2D" parent="." groups=["Pelaaja"]]
+script = ExtResource("3_lag3f")
+nopeus = 1000.0
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Player"]
+position = Vector2(314, 950)
+scale = Vector2(0.622, 0.603)
+sprite_frames = SubResource("SpriteFrames_grg3l")
+animation = &"run"
+frame_progress = 0.173194
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
+position = Vector2(290, 956)
+shape = SubResource("CapsuleShape2D_bmxlf")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer" parent="Player"]
+stream = ExtResource("10_oj177")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Player"]
+stream = ExtResource("11_hu7m1")
+
+[node name="Timer" type="Timer" parent="."]
+
+[node name="item spawner" type="Node2D" parent="."]
+script = ExtResource("12_5u3sd")
+item_scenes = Array[PackedScene]([ExtResource("13_i6aci"), ExtResource("14_l0khy"), ExtResource("15_1sh3p"), ExtResource("16_ppk33"), ExtResource("17_umon3"), ExtResource("18_rpfn0")])
+spawn_interval = 1.285
+
+[node name="HPBaarit" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 60.0
+offset_bottom = 44.0
+script = ExtResource("19_wapoo")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="HPBaarit"]
+layout_mode = 0
+offset_left = 1415.0
+offset_top = 91.5
+offset_right = 1987.0
+offset_bottom = 258.5
+scale = Vector2(0.5, 0.5)
+
+[node name="Kurpitsa1" type="TextureRect" parent="HPBaarit/HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("20_pqa57")
+
+[node name="Kurpitsa2" type="TextureRect" parent="HPBaarit/HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("20_pqa57")
+stretch_mode = 2
+
+[node name="Kurpitsa3" type="TextureRect" parent="HPBaarit/HBoxContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+texture = ExtResource("20_pqa57")
+
+[node name="ScoreLabeli" type="Label" parent="HPBaarit"]
+layout_mode = 0
+offset_left = 1119.0
+offset_top = 214.0
+offset_right = 2234.94
+offset_bottom = 373.42
+scale = Vector2(0.69, 0.69)
+theme_override_colors/font_color = Color(1, 0.843137, 0, 1)
+theme_override_fonts/font = ExtResource("21_fojr4")
+theme_override_font_sizes/font_size = 50

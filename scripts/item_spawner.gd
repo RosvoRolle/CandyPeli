@@ -23,7 +23,7 @@ func spawn_item():
 
 		# Set the X position randomly
 	var screen_width = get_viewport_rect().size.x
-	var random_x = randf_range(0, screen_width)
+	var random_x = randf_range(0, screen_width / 2)
 
 	item_instance.position = Vector2(random_x, global_position.y)
 	get_tree().current_scene.add_child(item_instance)

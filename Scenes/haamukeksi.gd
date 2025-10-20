@@ -29,7 +29,9 @@ func _on_body_entered(body: Node) -> void:
 			var game = get_tree().get_first_node_in_group("game")
 			if game:
 				game.add_score(pointit)
-
+		var audio_player = body.get_node("AudioStreamPlayer2D")
+		if audio_player:
+			audio_player.play()
 				
 		
 		

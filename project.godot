@@ -12,8 +12,12 @@ config_version=5
 
 config/name="CandyPeli"
 run/main_scene="uid://um73nb0y8soo"
-config/features=PackedStringArray("4.5", "Forward Plus")
+config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
+
+[autoload]
+
+CheckpointManager="*res://checkpoint_manager.gd"
 
 [display]
 
@@ -23,3 +27,9 @@ window/size/viewport_height=1080
 [dotnet]
 
 project/assembly_name="CandyPeli"
+
+[importer_defaults]
+
+animation_library={
+&"import_script/path": "uid://48y1kdmt0m1n"
+}

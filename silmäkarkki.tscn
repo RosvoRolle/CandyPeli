@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://bc4vdvlnp3hok"]
 
-[ext_resource type="Script" uid="uid://snb8hf0svuxk" path="res://silmäkarkki.gd" id="1_4krjd"]
+[ext_resource type="Script" uid="uid://b4740ne51nhu1" path="res://Scenes/lepakkokarkki.gd" id="1_4krjd"]
 [ext_resource type="Texture2D" uid="uid://dp8w8236ha74d" path="res://Assets/silmakarkki.PNG" id="1_50af6"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_4krjd"]
@@ -9,8 +9,6 @@ height = 168.0
 
 [node name="silmäkarkki" type="RigidBody2D"]
 script = ExtResource("1_4krjd")
-damage = 0
-pointit = 1
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(491, 235)
