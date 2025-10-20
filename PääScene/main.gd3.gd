@@ -23,5 +23,4 @@ func add_score(amount: int = 1) -> void:
 		_on_voitto()
 		
 func _on_voitto():
-	get_tree().change_scene_to_file("res://level_2.tscn")
-	
+	get_tree().change_scene_to_file("res://level_3.tscn")
