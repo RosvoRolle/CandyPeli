@@ -1,7 +1,7 @@
-[gd_scene load_steps=21 format=3 uid="uid://c2r6h20tnb7em"]
+[gd_scene load_steps=20 format=3 uid="uid://c2r6h20tnb7em"]
 
 [ext_resource type="Script" uid="uid://dp425u0ion2nj" path="res://scripts/character_body_2d.gd" id="1_82sn2"]
-[ext_resource type="Script" uid="uid://b675ap8epb8j" path="res://PääScene/main.gd3.gd" id="1_inf0h"]
+[ext_resource type="Script" uid="uid://btn0ty3qdr3k8" path="res://PääScene/main.gd" id="1_hqho7"]
 [ext_resource type="Texture2D" uid="uid://de52h8bqfbist" path="res://Assets/tausta.png" id="2_hqho7"]
 [ext_resource type="Texture2D" uid="uid://ddrw2l75gip2l" path="res://Assets/plumpyframe1rightSCALED.png" id="2_jdfom"]
 [ext_resource type="Texture2D" uid="uid://cnpneore7wnv1" path="res://Assets/plumpyframe2rightSCALED.png" id="3_xp0ib"]
@@ -17,7 +17,6 @@
 [ext_resource type="PackedScene" uid="uid://bc4vdvlnp3hok" path="res://silmäkarkki.tscn" id="14_xp0ib"]
 [ext_resource type="PackedScene" uid="uid://b51rqcsq10gpv" path="res://bug.tscn" id="15_ehrvi"]
 [ext_resource type="Texture2D" uid="uid://dagyw3w681ml3" path="res://Assets/sydan.png" id="16_ehrvi"]
-[ext_resource type="Script" uid="uid://bpudyvu8betdj" path="res://PääScene/main.gd1.gd" id="18_6nyl5"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_grg3l"]
 animations = [{
@@ -50,7 +49,7 @@ radius = 138.0
 height = 304.0
 
 [node name="Main2" type="Node2D"]
-script = ExtResource("1_inf0h")
+script = ExtResource("1_hqho7")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(960, 543)
@@ -113,4 +112,4 @@ texture = ExtResource("16_ehrvi")
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 23.0
-script = ExtResource("18_6nyl5")
+text = "1"

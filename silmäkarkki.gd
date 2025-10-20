@@ -5,7 +5,7 @@ extends RigidBody2D
 
 func _ready():
 	contact_monitor = true #saadaan törmäyksen seuranta rigidbodyyn
-	max_contacts_reported = 2
+	max_contacts_reported = 3
 	body_entered.connect(_on_body_entered) #yhdistää signaalit
 
 func _on_body_entered(body: Node) -> void:
