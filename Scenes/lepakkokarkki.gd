@@ -1,7 +1,7 @@
 extends RigidBody2D
 
-@export var damage: int = 1    # 0 = ei vahinkoa HP baariin, 1 = tekee vahinkoa
-@export var pointit: int = 0 
+@export var damage: int = 0   # 0 = ei vahinkoa HP baariin, 1 = tekee vahinkoa
+@export var pointit: int = 1 
 
 func _ready():
 	contact_monitor = true #saadaan törmäyksen seuranta rigidbodyyn
@@ -15,7 +15,7 @@ func _on_body_entered(body: Node) -> void:
 		if pointit > 0: 
 			var game = get_tree().get_first_node_in_group("game")
 			if game:
-				game.add.score(pointit)
+				game.add_score(pointit)
 
 				
 		

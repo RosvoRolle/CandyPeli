@@ -1,10 +1,8 @@
 
-
-
 extends Node
 @onready var player := $Player
-@onready var hud := $HPBaarit
-@export var score_board := 20
+@onready var hud: Control =  $HPBaarit
+@export var score_board := 2
 var score := 0
 func _ready():
 	add_to_group("game")
@@ -15,6 +13,7 @@ func _ready():
 func add_score(amount: int = 1) -> void:
 	score += amount
 	hud.set_score(score)
+	
 	if score >= score_board:
 		_on_voitto()
 		
