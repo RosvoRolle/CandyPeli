@@ -5,6 +5,7 @@ extends Node
 @onready var player := $Player
 @onready var hud: Control =  $HPBaarit
 @export var score_board := 2
+
 var score := 0
 
 
