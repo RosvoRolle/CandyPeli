@@ -108,3 +108,8 @@ stretch_mode = 2
 custom_minimum_size = Vector2(64, 64)
 layout_mode = 2
 texture = ExtResource("16_ehrvi")
+
+[node name="ScoreLabeli" type="Label" parent="HPBaarit"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
