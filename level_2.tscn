@@ -1,6 +1,5 @@
 [gd_scene load_steps=21 format=3 uid="uid://bhy88sgscldp6"]
 
-[ext_resource type="Script" uid="uid://b675ap8epb8j" path="res://PääScene/main.gd3.gd" id="1_jcnlr"]
 [ext_resource type="Texture2D" uid="uid://b87keuf8e6mjw" path="res://Assets/taustalevel3.png" id="2_jcnlr"]
 [ext_resource type="Script" uid="uid://dp425u0ion2nj" path="res://scripts/character_body_2d.gd" id="3_5kfcu"]
 [ext_resource type="Texture2D" uid="uid://ddrw2l75gip2l" path="res://Assets/plumpyframe1rightSCALED.png" id="4_i558w"]
@@ -18,6 +17,7 @@
 [ext_resource type="Script" uid="uid://cidbnbild1tih" path="res://PääScene/hp_baarit.gd" id="16_t8cg7"]
 [ext_resource type="Texture2D" uid="uid://dagyw3w681ml3" path="res://Assets/sydan.png" id="17_o5ykh"]
 [ext_resource type="Script" uid="uid://t4qq4g7nkcdi" path="res://PääScene/main.gd2.gd" id="18_5kfcu"]
+[ext_resource type="Script" path="res://PääScene/score_labeli.gd" id="18_jcnlr"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_grg3l"]
 animations = [{
@@ -50,7 +50,7 @@ radius = 138.0
 height = 304.0
 
 [node name="Level 2" type="Node2D"]
-script = ExtResource("1_jcnlr")
+script = ExtResource("18_5kfcu")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(960, 543)
@@ -114,4 +114,4 @@ texture = ExtResource("17_o5ykh")
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 23.0
-script = ExtResource("18_5kfcu")
+script = ExtResource("18_jcnlr")

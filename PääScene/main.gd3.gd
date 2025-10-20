@@ -13,11 +13,8 @@ func _ready():
 
 	hud.set_health(player.health, player.max_hp)
 	
-	#Scoreboardin aloitus
-	hud.set_score(score)
-	
 func add_score(amount: int = 1) -> void:
-	score + amount
+	score += amount
 	hud.set_score(score)
 	if score >= score_board:
 		_on_voitto()

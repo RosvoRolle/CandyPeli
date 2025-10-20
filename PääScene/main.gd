@@ -19,7 +19,7 @@ func _ready():
 
 	
 func add_score(amount: int = 1) -> void:
-	score + amount
+	score += amount
 	hud.set_score(score)
 	$HPBaarit/ScoreLabeli.set_score(score)
 	if score >= score_board:
