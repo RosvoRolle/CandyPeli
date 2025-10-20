@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://c2r6h20tnb7em"]
+[gd_scene load_steps=21 format=3 uid="uid://c2r6h20tnb7em"]
 
 [ext_resource type="Script" uid="uid://dp425u0ion2nj" path="res://scripts/character_body_2d.gd" id="1_82sn2"]
 [ext_resource type="Script" uid="uid://btn0ty3qdr3k8" path="res://PääScene/main.gd" id="1_hqho7"]
@@ -17,6 +17,7 @@
 [ext_resource type="PackedScene" uid="uid://bc4vdvlnp3hok" path="res://silmäkarkki.tscn" id="14_xp0ib"]
 [ext_resource type="PackedScene" uid="uid://b51rqcsq10gpv" path="res://bug.tscn" id="15_ehrvi"]
 [ext_resource type="Texture2D" uid="uid://dagyw3w681ml3" path="res://Assets/sydan.png" id="16_ehrvi"]
+[ext_resource type="Script" uid="uid://bx6pdeiwebdci" path="res://PääScene/score_labeli.gd" id="18_inf0h"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_grg3l"]
 animations = [{
@@ -110,6 +111,10 @@ layout_mode = 2
 texture = ExtResource("16_ehrvi")
 
 [node name="ScoreLabeli" type="Label" parent="HPBaarit"]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 23.0
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.72800004
+anchor_bottom = 0.652
+offset_right = 4.319996
+offset_bottom = 2.3120003
+script = ExtResource("18_inf0h")
